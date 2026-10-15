@@ -11,7 +11,7 @@ import re
 # Substitua pela sua chave de API do Google Gemini
 GEMINI_API_KEY 
 modelo = genai.GenerativeModel('gemini-2.5-flash')
-GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+GEMINI_API_KEY = st.secrets["AQ.Ab8RN6LfH-7T-3GBzGUJFtgIuO7BIMPd9p3i48b2slBdQ41CkQ"]
 # ==========================================
 # FUNÇÕES DE EXTRAÇÃO DE TEXTO
 # ==========================================
@@ -208,6 +208,6 @@ if arquivo_enviado is not None:
                 html_final = obter_html_jogo(perguntas_json)
                 st.components.v1.html(html_final, height=650, scrolling=True)
                 
-            except Exception as e:
-                st.error(f"Ocorreu um erro ao processar: {e}")
+         except Exception as e:
+                st.error(f"Ocorreu um erro ao processar: {e}")   
 
